@@ -39,4 +39,6 @@ Bash
 python bomdia.py
 (Lembrete: tira a mão do mouse enquanto a automação estiver rodando!)
 
-Aviso Legal e Moral: O autor deste script não se responsabiliza por acidentes causados pelo envio de mensagens para listas de contatos com "sobreposições de relacionamento". Testado exaustivamente em ambiente de homologação (com os parças Wil, Roger e Walter). Use com sabedoria! 😎
+Aviso Legal e Moral: O autor deste script não se responsabiliza por acidentes causados pelo envio de mensagens para listas de contatos
+com "sobreposições de relacionamento". Testado exaustivamente em ambiente de homologação (com os parças Wil, Roger e Walter).
+Use com sabedoria! 😎
