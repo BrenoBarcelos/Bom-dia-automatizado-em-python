@@ -1,4 +1,4 @@
-# 🤖 BomDiaPython - O Robô do "Bom dia, amor!" (Da Chibatada Só)
+# 🤖 BomDiaPython - O Robô do "Bom dia, amor!"
 
 Você já acordou na correria e esqueceu de mandar o sagrado "Bom dia" pra gata (ou pras gatas)? Seus problemas acabaram! 
 
