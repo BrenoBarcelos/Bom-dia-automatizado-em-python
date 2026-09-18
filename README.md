@@ -28,3 +28,15 @@ git clone [https://github.com/SeuUsuario/bomdiapython.git](https://github.com/Se
 cd bomdiapython
 python -m venv .venv
 source .venv/Scripts/activate # No Windows (Git Bash)
+Bash
+pip install google-genai pyautogui schedule pyperclip
+3. Configure o Coração da IA
+Abra o bomdia.py, coloque a sua API Key do Google AI Studio na variável CHAVE_API e personalize a lista de contatos e o prompt com o seu estilo de fala.
+
+4. Solta a fera!
+
+Bash
+python bomdia.py
+(Lembrete: tira a mão do mouse enquanto a automação estiver rodando!)
+
+Aviso Legal e Moral: O autor deste script não se responsabiliza por acidentes causados pelo envio de mensagens para listas de contatos com "sobreposições de relacionamento". Testado exaustivamente em ambiente de homologação (com os parças Wil, Roger e Walter). Use com sabedoria! 😎
