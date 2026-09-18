@@ -1,52 +1,30 @@
-# Bom-dia-automatizado-em-python
-🤖 BomDiaPython - O Robô do "Bom dia, amor!" (Da Chibatada Só)
-Você já acordou na correria e esqueceu de mandar o sagrado "Bom dia" pra gata (ou pras gatas)? Seus problemas acabaram!
+# 🤖 BomDiaPython - O Robô do "Bom dia, amor!" (Da Chibatada Só)
 
-O BomDiaPython é um script de automação 100% Python que abre o WhatsApp Web e faz o trabalho duro por você. E o melhor: equipado com a IA do Google Gemini (3.6-Flash) para gerar mensagens diárias únicas, com a sua personalidade e as suas gírias, garantindo que o seu "suave" e "tranquilo" cheguem intactos, sem parecer um robô sem alma.
+Você já acordou na correria e esqueceu de mandar o sagrado "Bom dia" pra gata (ou pras gatas)? Seus problemas acabaram! 
 
-🚀 Como a mágica acontece (A técnica da "Chibatada Só")
+O **BomDiaPython** é um script de automação 100% Python que abre o WhatsApp Web e faz o trabalho duro por você. E o melhor: equipado com a IA do **Google Gemini (3.6-Flash)** para gerar mensagens diárias únicas, com a sua personalidade e as suas gírias, garantindo que o seu "suave" e "tranquilo" cheguem intactos, sem parecer um robô sem alma.
+
+## 🚀 Como a mágica acontece (A técnica da "Chibatada Só")
 Nas primeiras versões, o robô abria e fechava uma aba do navegador para cada pessoa. Feio, pesado e amador.
 
-Refatoramos a arquitetura para o método "De uma chibatada só":
+Refatoramos a arquitetura para o método **"De uma chibatada só"**:
+1. O robô abre o WhatsApp Web principal apenas UMA vez.
+2. A IA gera todas as mensagens baseadas em um Prompt dinâmico de personalidade.
+3. Usando `pyautogui` e `pyperclip` (para burlar o famoso bug de caracteres da barra de endereços do Windows), o robô injeta o link via **Ctrl+L** e **Ctrl+V**, navegando entre os contatos na mesma aba sem recarregar a página!
+4. **Resiliência Pura:** Se a internet cair, o servidor do Google engasgar (Erro 503) ou alguém cancelar no meio (o bom e velho `Ctrl+C`), nosso bloco `try/except` assume o volante e garante o envio de mensagens de emergência. A chibatada não para!
 
-O robô abre o WhatsApp Web principal apenas UMA vez.
+## ⚙️ Tecnologias Utilizadas
+* `Python` (O coração da fera)
+* `google-genai` (Acessando o modelo mais atual Gemini 3.6-Flash)
+* `pyautogui` & `pyperclip` (Nossos estagiários que controlam o teclado de forma veloz)
+* `schedule` (Pra acordar mais cedo que você e trabalhar)
+* `webbrowser` (Pra injetar as URLs no navegador padrão)
 
-A IA gera todas as mensagens baseadas em um Prompt dinâmico de personalidade.
+## 🛠️ Como rodar na sua máquina
 
-Usando pyautogui e pyperclip (para burlar o famoso bug de caracteres da barra de endereços do Windows), o robô injeta o link via Ctrl+L e Ctrl+V, navegando entre os contatos na mesma aba sem recarregar a página!
-
-Resiliência Pura: Se a internet cair, o servidor do Google engasgar (Erro 503) ou alguém cancelar no meio (o bom e velho Ctrl+C), nosso bloco try/except assume o volante e garante o envio de mensagens de emergência. A chibatada não para!
-
-⚙️ Tecnologias Utilizadas
-Python (O coração da fera)
-
-google-genai (Acessando o modelo mais atual Gemini 3.6-Flash)
-
-pyautogui & pyperclip (Nossos estagiários que controlam o teclado de forma veloz)
-
-schedule (Pra acordar mais cedo que você e trabalhar)
-
-webbrowser (Pra injetar as URLs no navegador padrão)
-
-🛠️ Como rodar na sua máquina
-1. Clone e crie o ambiente virtual (Melhor prática, né pai?)
-
-Bash
-git clone https://github.com/SeuUsuario/bomdiapython.git
+**1. Clone e crie o ambiente virtual (Melhor prática, né pai?)**
+```bash
+git clone [https://github.com/SeuUsuario/bomdiapython.git](https://github.com/SeuUsuario/bomdiapython.git)
 cd bomdiapython
 python -m venv .venv
 source .venv/Scripts/activate # No Windows (Git Bash)
-2. Instale as munições
-
-Bash
-pip install google-genai pyautogui schedule pyperclip
-3. Configure o Coração da IA
-Abra o bomdia.py, coloque a sua API Key do Google AI Studio na variável CHAVE_API e personalize a lista de contatos e o prompt com o seu estilo de fala.
-
-4. Solta a fera!
-
-Bash
-python bomdia.py
-(Lembrete: tira a mão do mouse enquanto a automação estiver rodando!)
-
-Aviso Legal e Moral: O autor deste script não se responsabiliza por acidentes causados pelo envio de mensagens para listas de contatos com "sobreposições de relacionamento". Testado exaustivamente em ambiente de homologação (com os parças Wil, Roger e Walter). Use com sabedoria! 😎
